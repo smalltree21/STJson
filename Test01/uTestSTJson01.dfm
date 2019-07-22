@@ -5,7 +5,7 @@ object Form1: TForm1
   Height = 366
   Caption = 'JSon Utils for Delphi7'
   Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
+  Font.Charset = ANSI_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
@@ -13,19 +13,22 @@ object Form1: TForm1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object Label1: TLabel
+  object Memo1: TMemo
+    Left = 88
+    Top = 8
+    Width = 345
+    Height = 312
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 1
+  end
+  object Button1: TButton
     Left = 8
-    Top = 120
-    Width = 425
-    Height = 49
-    Alignment = taCenter
-    AutoSize = False
-    Caption = 'Still under construction - 2019.07.19'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clRed
-    Font.Height = -19
-    Font.Name = 'MS Sans Serif'
-    Font.Style = [fsBold]
-    ParentFont = False
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 0
+    OnClick = Button1Click
   end
 end
